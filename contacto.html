@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Promociones</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/india.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#menu" class="hamburger" id="menuMobile">Menú</a>
+         <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agra.html">Agra</a></li>
+            <li><a href="turismo.html">Sitios Turisticos</a></li>
+            <li class="nav1"><a href="contacto.html">Sobre Nosotros</a></li>
+            <li id="ocultar-hamburguer"><a href="#">Cerrar menú</a></li>
+         </ul>
+        </nav>
+    </header>
+
+    <main>
+     <article class="contenido-sobrenosotros">
+        <div class="caja-contacto">
+        <h1>Agra, La India</h1>
+        <p><a href="#contactanos">Consultá por tu viaje</a></p>
+        <p>Especialistas en viajes de calidad</p>
+        </div>
+     </article>
+
+<section class="margin-secciones">
+
+    <article class="article-sobrenosotros">
+     <h2>¿Quiénes somos?</h2>
+     <p>En "Descubriendo India", estamos dedicados a hacer realidad sus sueños vacacionales más profundos. Nos apasiona brindar experiencias de viaje inolvidables y auténticas que permitan a nuestros clientes descubrir la belleza, la cultura y la riqueza de India.</p><br>
+     <p>Nuestra agencia cuenta con un equipo de expertos en viajes con amplio conocimiento y experiencia en la planificación y diseño de itinerarios únicos y personalizados. Nos esforzamos por ofrecerle una variedad de opciones para que su experiencia en India sea verdaderamente especial y enriquecedora.</p><br>
+     <p>Nos enorgullece ser su guía confiable mientras explora las maravillas de este país diverso. Nuestro compromiso es brindarle un servicio excepcional, atendiendo a sus necesidades y preferencias para que pueda disfrutar al máximo de cada momento de su viaje.</p><br>
+     <p>Así que, ¿está listo para embarcarse en una aventura única por India? Permítanos llevarlo de la mano a través de un viaje que despertará todos sus sentidos y lo llenará de recuerdos imborrables.</p><br></article>
+
+    <article class="article-sobrenosotros">
+    <h3>Ofertas especiales</h3>
+    <p>¡Reserve con anticipación y ahorre! Por un período limitado, ofrecemos descuentos especiales para aquellos viajeros que planifiquen con tiempo su aventura en la tierra de la diversidad y la espiritualidad. ¡No pierda la oportunidad de asegurar su lugar y disfrutar de las maravillas de India a precios increíbles!</p></article>
+
+<div class="form-contenedor">
+<article class="formulario">
+    <h2>Completa el formulario para que nos pongamos en contacto y podamos ayudarle con todas sus dudas.</h2>
+    <div class="cuadro-gris">
+        <div class="info-form">
+        <p id="contactanos" class="contactanosp">Ingrese sus datos</p>
+        <form action="contacto.php" method="post" enctype="multipart/form-data">
+           <input type="text" name="nombres" placeholder="Nombre completo" required>
+           <input type="text" name="email" placeholder="Correo eléctronico" required>
+           <input type="text" name="tel" placeholder="Número de télefono" required>
+           <input type="date" name="fecha">
+           <input type="number" name="duracion" placeholder="Duración del viaje">
+           <input type="number" name="mayor" placeholder="Adulto/a">
+           <input type="number" name="menor" placeholder="Niño/a">
+           <input id="caja-mensaje" type="text" name="mensaje" placeholder="Dejanos tu mensaje...">
+           <div class="container-checkbox">
+           <p class="contactanosp">¿Qué lugares te gustaría visitar de Agra?</p>
+           <div class="opciones"><input type="checkbox" name="tajmahal" value="Taj Mahal" id="tajmahal"><label for="tajmahal">Taj Mahal</label></div>
+           <div class="opciones"><input type="checkbox" name="mehtab " value="Mehtab Bagh" id="mehtab"><label for="mehtab">Mehtab Bagh</label></div>
+           <div class="opciones"><input type="checkbox" name="fuerterojo" value="El Fuerte Rojo de Agra" id="fuerterojo"><label for="fuerterojo">El Fuerte Rojo de Agra</label></div>
+           <div class="opciones"><input type="checkbox" name="jardines" value="Jardines Mogoles" id="jardines"><label for="jardines">Jardines Mogoles</label></div>
+           <div class="opciones"><input type="checkbox" name="fatehpur" value="Fatehpur Sikri" id="fatehpur"><label for="fatehpur">Fatehpur Sikri</label></div>
+           <div class="opciones"><input type="checkbox" name="itimidad" value="Itimidad-Ud-Daulah" id="itmidad"><label for="itmidad">Itimidad-Ud-Daulah</label></div>
+            <p>Subir un archivo pdf con la lista de lugares a conocer para poder brindarle una información mas precisa.</p>
+            <div>
+                <input type="file" id="lista_pasajeros" name="lista_pasajeros" accept=".pdf">
+            </div>
+        </div>
+        <input id="boton" type="submit" value="Enviar"></form>
+    </div>
+    </div>
+</article>
+</div>
+
+</section>
+</main>
+
+<footer> 
+
+    <div class="contenedor-footer">
+    <div class="columna-footer">
+    <h2>Sobre Nosotros</h2>
+    <ul>
+      <li><div id="tel"></div>+54 9 11 22334455</li>
+      <li><div id="email"></div><a class="sobrenosotros" href="mailto:india@newsletter.com">india@newsletter.com</a></li>
+      <li><div id="gps"></div><a class="sobrenosotros" href="https://www.google.com/maps?q=Agra,%20Uttar%20Pradesh,%20India"  target="_blank">Agra, Uttar Pradesh, India.</a></li>
+    </ul>  
+    </div>
+
+    <div class="columna-footer">
+    <h2>Más Información:</h2>
+    <ul>
+     <li><a class="terminos" href="#">Política de Privacidad</a></li>
+     <li><a class="terminos" href="#">Política de Cookies</a></li>
+     <li><a class="terminos" href="#">Términos y Condiciones</a></li>
+    </ul>
+    </div>
+       
+    <div class="columna-footer">
+    <h2>Newsletter</h2>
+    <p>Si queres estar al día con las ultimas novedades y recibir las mejores noticias, suscríbite a nuestro newsletter.<br> No enviaremos spam en ningún caso.</p>
+    <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" target="_blank" enctype="multipart/form-data">
+        <div class="form-newsletter">
+        <input type="email" id="mail" name="email" placeholder="Correo Eléctronico" required>
+        <button type="submit">Suscribirse</button>
+    </div>
+      </form>
+    </div>
+    </div>
+
+    <div class="contenedor-footer2">
+    <div class="columna-footer2">
+        <h3>Alumno:</h3>
+        <p>Sierra, Laureano.</p>
+        <p><a class="terminos" href="mailto:laureano.sierra@davinci.edu.ar">laureano.sierra@davinci.edu.ar</a></p>
+   </div>
+
+   <div class="columna-footer2">
+        <h3>Profesora:</h3>
+        <p>García, Mabel.</p>
+        <p><a class="terminos" href="mailto:mabel.garcia@davinci.edu.ar">mabel.garcia@davinci.edu.ar</a></p>
+    </div>
+
+    <div class="columna-footer2">
+        <h3>Materia:</h3>
+        <p>Maquetado y Desarrollo Web</p>
+        <p>Comisión DWM1BV</p>
+    </div>
+    </div>
+
+<div class="footer-copyright"> 
+     <p>Trabajo Práctico Final / 1er Cuatrimestre / Escuela de Arte Multimedial Da Vinci</p>
+     <details>
+    <summary>Todos los derechos reservados &copy;2022</summary>
+    <p>Todo el material publicado en este Sitio Web (incluyendo textos, imagénes, logotípo, estructura y diseño de la composición de cada una de las páginas individuales que componen el sitio fueron reservados).
+     </details>
+</div>
+ </footer>  
+ 
+</body>
+</html>
